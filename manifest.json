@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Unique Quote Fetcher",
+  "version": "1.0",
+  "description": "Get unique motivational quotes on every refresh.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": [
+    "https://api.quotable.io/*",
+    "https://zenquotes.io/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
